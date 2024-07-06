@@ -1,0 +1,107 @@
+/* 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸Style dedicado a busqueda.html🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸*/
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(22,12,21), rgb(41,16,35) 100%); */
+    background: black;
+
+}
+.body{
+    background-color: rgba(78, 46, 114, 0.74);   
+}
+.nav-bar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.nav-bar video{
+ padding-left: 1rem;
+}
+header{
+    background-color: #010101;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+section{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.juego{
+    font-family: Roboto;
+    font-weight: 1000;
+    border: 1px solid #33d911;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+.juego img{
+    display: block;
+    margin: 0 auto;
+}
+.juego h3{
+    font-size:x-large;
+    font-family: Roboto;
+    font-weight: bolder;
+    color: #9170ce;
+}
+
+
+
+.nav-bar ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    display: inline-block; 
+}
+
+.nav-bar form {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-bar label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+.nav-bar input[type="text"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px; 
+}
+
+input[type="submit"] {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #9c66d6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav-bar input[type="submit"]:hover{
+    background-color: #b81fa6;
+}
+.footer{
+    clear: both;
+    padding: 3rem;
+    margin-top:50%;
+    background-color: black;
+}
