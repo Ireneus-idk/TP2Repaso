@@ -13,8 +13,15 @@ body {
     /* background-color: #000000; */
     
 }
+@font-face {
+    font-family: 'abnesregular';
+    src: url('fonts/abnes-webfont.woff2') format('woff2'),
+         url('fonts/abnes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 h1,h2,h3{
-    font-family: abnes;
+    font-family: 'abnesregular', sans-serif;
 }
 h1{
     letter-spacing: 1px;
@@ -36,7 +43,12 @@ header {
     text-align: center;
     margin-bottom: 20px;
 }
+/* #img{
+    background-image: url(../img/ezgif-7-1b831b327b.gif);
+    
+} */
 .nav-bar {
+    
     background-color: black;
     display: flex;
     justify-content: space-between; 
@@ -45,6 +57,9 @@ header {
 .nav-bar video{
     padding-left: 1rem;
    }
+.nav-bar img{
+    padding-left: 1rem;
+}
 .nav-bar ul {
     list-style-type: none; 
     margin: 0;
@@ -95,6 +110,7 @@ header {
 }
 .juegos-container{
     background-color: #faf5fa09;
+    
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -107,6 +123,9 @@ section {
 
 .juego {
     border: 2px solid #26d017;
+    border-image-slice: 1;
+    animation: gradient-border 5s infinite;
+
     border-radius: 8px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
     /* padding: 10px; */
@@ -118,9 +137,22 @@ section {
     
     /* margin-bottom: 1rem; */
 }
+@keyframes gradient-border {
+    0% {
+      border-image-source: linear-gradient(45deg, #26d017, #1e90ff);
+    }
+    50% {
+      border-image-source: linear-gradient(45deg, #1e90ff, #ff69b4);
+    }
+    100% {
+      border-image-source: linear-gradient(45deg, #ff69b4, #26d017);
+    }
+}
+
 .juego:hover{
     box-shadow: 0 0 20px rgba(113, 111, 111, 0.978);
     transform: scale(1.05);
+    
 }
 
 .juego img {
@@ -172,6 +204,8 @@ background-color: #e7c91f;
     padding: 0.5rem;
     border: none;
     border-radius:5px ;
+    display: block;
+    margin: 0.5rem auto;
 }
 .formsSub p{
     color: rgb(103, 101, 101);
@@ -198,4 +232,109 @@ background-color: #e7c91f;
     color: white;
     padding: 4rem;
     background-color: black;
+}
+
+.linea{
+    height: 2px; 
+    background-color: #333; 
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* margin: 20px 0; */
+}
+.animated-line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #9400D3, transparent);
+    animation: neonLine 2s linear infinite;
+}
+@keyframes neonLine {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@media(max-width:641px){
+.formsSub {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+.formsSub input{
+    width: 50%;
+    max-width: 300px;
+}
+
+.nav-bar video{
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    padding: 1rem;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.nav-bar input{
+max-width: 40%;
+
+}
+.nav-bar button{
+font-size: 12px;
+font-weight: 800;
+}
+.nav-bar [type="text"]{
+    padding: 2px;
+}
+.nav-bar label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+.linea{
+    height: 2px; 
+    background-color: #333; 
+    margin: 20px 0; 
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.animated-line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #9400D3, transparent);
+    animation: neonLine 2s linear infinite;
+}
+@keyframes neonLine {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+h2{
+    font-family: 'abnesregular', sans-serif;
+    font-size: large;
+}
+h1{
+    font-weight: bold;
+}
 }

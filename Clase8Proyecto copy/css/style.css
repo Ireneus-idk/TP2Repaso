@@ -105,3 +105,34 @@ input[type="submit"] {
     margin-top:50%;
     background-color: black;
 }
+@media(max-width:641px){
+    .nav-bar video{
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    padding: 1rem;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.nav-bar input{
+max-width: 40%;
+
+}
+.nav-bar button{
+font-size: 12px;
+font-weight: 800;
+}
+.nav-bar [type="text"]{
+    padding: 2px;
+}
+.nav-bar label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+}

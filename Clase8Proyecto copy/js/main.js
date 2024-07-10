@@ -103,6 +103,8 @@ function mostrarFavoritos() {
             <p>Fecha de lanzamiento: ${fav.fecha}</p>
             <img src="${fav.imagen}" alt="${fav.nombre}" width="200">
             <button onclick="eliminarDeFavoritos('${fav.id}')">Eliminar de Favoritos</button>
+            <label>Opinion:<br /><textarea name="mensaje" placeholder="Ingrese su opinion:"></textarea></label>
+            <button onclick="#">Enter</button>
         `;
         //añadimos el div "favDiv" a favoritosDiv que referencia el elemento del html con el 
         //id "favoritos"
@@ -124,7 +126,6 @@ function eliminarDeFavoritos(id) {
     mostrarFavoritos();
     porFecha();
 }
-
 
  //Función que categoriza los juegos favoritos segun su fecha de lanzamiento.
 function porFecha() {
@@ -163,5 +164,7 @@ function porFecha() {
         }
     });
 }
+
+
 
 //🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸 Fin gracias por leer ^^ 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸

@@ -6,24 +6,68 @@
     <title>GameStart</title>
     <link rel="shortcut icon" href="./img/Copia de GameStart.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styleindex.css">
+    
 </head>
-<body class="body">
-    <div class="nav-bar">
-        <ul>
+<body class="body" >
+    <div class="nav-bar" class="a">
+        <ul >
             <li>
                  <!-- <video src="./img/GameStart.mp4" autoplay playinline loop width="200px"></video>  -->
-                <video autoplay muted loop width="200px">
-                    <source src="./img/GameStart.mp4" type="video/mp4">
+                <!-- <video autoplay muted loop width="200px">
+                    <source src="./img/ezgif-7-c9b506857e.gif" type="video/mp4">
                     <source src="./img/GameStart.webm" type="video/webm">
                     <source src="./img/GameStart.ogv" type="video/ogg">
-                </video>
+                </video> -->
+                <img src="./img/ezgif-7-c9b506857e.gif" alt="" width="200px">
             </li> 
         </ul>
+
+        <script>
+            function setNavBarBackground() {
+                const date = new Date();
+                var month = date.getMonth(); // 0 is January, 11 is December
+                //  month = 3;
+                let backgroundImage;
+    
+                switch (month) {
+                    case 11: // December (verano)
+                    case 0: // January
+                    case 1: // February
+                        backgroundImage = 'url(./img/bb81c2a3301af96faa0e2cd5f30cd9f8db8c9f23_hq.gif)';
+                        break;
+                    case 2: // March    (otoño)
+                    case 3: // April
+                    case 4: // May
+                        backgroundImage = 'url(./img/otoño.gif)';
+                        break;
+                    case 5: // June     (invierno)
+                    case 6: // July
+                    case 7: // August
+                        backgroundImage = 'url(./img/ezgif-7-1b831b327b.gif)';
+                        break;
+                    case 8: // September (primavera)
+                    case 9: // October
+                    case 10: // November
+                        backgroundImage = 'url(./img/primavera1.gif)';
+                        break;
+                    default:
+                        backgroundImage = 'url(./img/1112850_c341b.gif)';
+                }
+    
+                document.querySelector('.nav-bar').style.backgroundImage = backgroundImage;
+            }
+            
+            // Call the function when the page loads
+            setNavBarBackground();
+        </script>
         <form id="searchForm" action="busqueda.html" method="get">
             <label for="searchTerm">Buscar Juego:</label>
             <input type="text" id="searchTerm" name="q" required>
             <button type="submit">Buscar</button>
         </form>
+    </div>
+    <div class="linea">
+        <div class="animated-line"></div>
     </div>
 
     <header>
@@ -39,7 +83,7 @@
                colors="primary:#c69cf4,secondary:#66ee78"
                style="width:40px;height:40px">
            </lord-icon></h2>
-        <div id="juegosGenerales" class="juegos-container"></div>
+        <div id="juegosGenerales" class="juegos-container" class="linea"></div>
     </section>
 
     <section  id="abajo">
@@ -53,7 +97,7 @@
                 colors="primary:#c69cf4,secondary:#f49cc8"
                 style="width:40px;height:40px">
             </lord-icon></h2>
-        <div id="favoritos" class="juegos-container"></div>
+        <div id="favoritos" class="juegos-container" id="opinion"></div>
     </section>
     
     <section>
