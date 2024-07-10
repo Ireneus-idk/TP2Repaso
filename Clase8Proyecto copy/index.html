@@ -25,29 +25,29 @@
         <script>
             function setNavBarBackground() {
                 const date = new Date();
-                var month = date.getMonth(); // 0 is January, 11 is December
+                const month = date.getMonth(); // 0 es Enero, 11 es Diciembre
                 //  month = 3;
                 let backgroundImage;
     
                 switch (month) {
-                    case 11: // December (verano)
-                    case 0: // January
-                    case 1: // February
+                    case 11: // Diciembre (verano)
+                    case 0: // Enero
+                    case 1: // Febrero
                         backgroundImage = 'url(./img/bb81c2a3301af96faa0e2cd5f30cd9f8db8c9f23_hq.gif)';
                         break;
-                    case 2: // March    (otoño)
-                    case 3: // April
-                    case 4: // May
+                    case 2: // Marzo    (otoño)
+                    case 3: // Abril
+                    case 4: // Mayo
                         backgroundImage = 'url(./img/otoño.gif)';
                         break;
-                    case 5: // June     (invierno)
-                    case 6: // July
-                    case 7: // August
+                    case 5: // Junio     (invierno)
+                    case 6: // Julio
+                    case 7: // Agosto
                         backgroundImage = 'url(./img/ezgif-7-1b831b327b.gif)';
                         break;
-                    case 8: // September (primavera)
-                    case 9: // October
-                    case 10: // November
+                    case 8: // Septiembre (primavera)
+                    case 9: // Octubre
+                    case 10: // Noviembre
                         backgroundImage = 'url(./img/primavera1.gif)';
                         break;
                     default:
@@ -57,7 +57,7 @@
                 document.querySelector('.nav-bar').style.backgroundImage = backgroundImage;
             }
             
-            // Call the function when the page loads
+            // Llama a la funcion apenas carga la página
             setNavBarBackground();
         </script>
         <form id="searchForm" action="busqueda.html" method="get">
