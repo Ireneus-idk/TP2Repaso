@@ -10,4 +10,4 @@ Otra de las características de la API es que contamos con una barra de búsqued
 el boton de búsqueda nos redireccionará a una nueva página donde nos mostrará toda la información
 que se haya en la API acerca de ese juego y sus secuelas.
 
-Deploy en netlify: https://gamestarts.netlify.app/
+Deploy en netlify: https://gamestart2.netlify.app/
